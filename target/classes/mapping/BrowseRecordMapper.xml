@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.dao.BrowseRecordDao">
+
+    <resultMap id="BrowseRecordBaseMap" type="com.human.model.BrowseRecord">
+        <id column="record_id" property="record_id" jdbcType="INTEGER" />
+        <result column="scenic_spot_id" property="scenic_spot_id" jdbcType="VARCHAR"/>
+        <result column="record_username" property="record_username" jdbcType="VARCHAR"/>
+        <result column="record_time" property="record_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--sql查询用户浏览数量-->
+    <select id="getBrowseRecordCount" parameterType="Map" resultType="int">
+        select count(*) FROM browse_record where record_username= #{record_username}
+    </select>
+
+    <delete id="deleteBrowseRecord" parameterType="Map" >
+        delete from browse_record
+        where record_id = #{record_id}
+    </delete>
+
+    <delete id="deleteAllBrowseRecord" parameterType="Map" >
+        delete from browse_record
+        where record_username = #{record_username}
+    </delete>
+
+    <!--添加用户保存数据-->
+    <insert id="addBrowseRecord" parameterType="Map">
+        insert into browse_record (scenic_spot_id,record_username,record_time) values
+        (#{scenic_spot_id},#{record_username},#{record_time})
+    </insert>
+
+
+    <!--获取用户所有关注的景点-->
+    <select id="selectAllBrowseRecordByName" parameterType="Map" resultMap="BrowseRecordBaseMap">
+        select * from browse_record  where  record_username= #{record_username} order by record_time DESC
+        <if test="start!=null and size!=null">
+            limit #{start},#{size}
+        </if>
+    </select>
+
+</mapper>

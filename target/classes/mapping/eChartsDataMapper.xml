@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.dao.eChartsDataDao">
+
+
+    <resultMap id="eChartsDataBaseMapCity" type="com.human.model.eChartsData">
+        <result column="city_count" property="vaule"/>
+        <result column="scenic_city" property="value_name"/>
+    </resultMap>
+
+    <resultMap id="eChartsDataBaseMapType" type="com.human.model.eChartsData">
+        <result column="type_count" property="vaule"/>
+        <result column="scenic_type" property="value_name"/>
+    </resultMap>
+
+    <resultMap id="eChartsDataBaseMapNWScenic" type="com.human.model.eChartsData">
+        <result column="scenic_salenum" property="vaule"/>
+        <result column="scenic_latitude" property="value_name"/>
+    </resultMap>
+
+    <resultMap id="eChartsDataBaseMapTopScenic" type="com.human.model.eChartsData">
+        <result column="scenic_salenum" property="vaule"/>
+        <result column="scenic_name" property="value_name"/>
+    </resultMap>
+
+
+    <select id="ShowScenicNW" resultMap="eChartsDataBaseMapNWScenic">
+        select scenic_latitude,scenic_salenum from scenic
+    </select>
+
+    <select id="ShowTopScenic" resultMap="eChartsDataBaseMapTopScenic">
+        select scenic_name,scenic_salenum from scenic order by (scenic_salenum+0) desc  limit 0,10
+    </select>
+
+    <select id="ShowScenicCity" resultMap="eChartsDataBaseMapCity">
+        select scenic_city,count(scenic_city) as city_count from scenic  GROUP BY scenic_city order by count(scenic_city) desc limit 0,12
+    </select>
+
+    <select id="ShowScenicType" resultMap="eChartsDataBaseMapType">
+      select scenic_type,count(scenic_type) as type_count from scenic  GROUP BY scenic_type order by count(scenic_type) desc limit 0,7
+    </select>
+
+
+</mapper>

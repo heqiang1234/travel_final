@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.dao.UserInterestDao">
+
+    <resultMap id="UserInterestBaseMap" type="com.human.model.UserInterest">
+        <!--<id column="id" property="id" jdbcType="BIGINT"/>-->
+        <id column="user_interset_id" property="user_interset_id" jdbcType="INTEGER" />
+        <result column="user_spot_id" property="user_spot_id" jdbcType="VARCHAR"/>
+        <result column="user_scenic_type" property="user_scenic_type" jdbcType="VARCHAR"/>
+        <result column="user_interest_time" property="user_interest_time" jdbcType="VARCHAR"/>
+        <result column="user_name" property="user_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--sql 查询用户关注景点-->
+    <select id="getUserInterCount" parameterType="Map" resultType="int">
+        select count(*) FROM user_interest where user_name= #{user_name}
+    </select>
+
+    <delete id="deleteUserInter" parameterType="Map" >
+        delete from user_interest
+        where user_interset_id = #{user_interest_id}
+    </delete>
+
+    <!--添加用户保存数据-->
+    <insert id="addUserInter" parameterType="Map">
+        insert into user_interest (user_name,user_spot_id,user_scenic_type,user_interest_time) values
+        (#{user_name},#{user_spot_id},#{user_scenic_type},#{user_interest_time})
+    </insert>
+
+    <update id="updateUserInter" parameterType="Map">
+        update user_interest
+        <set>
+            user_name= #{user_name},user_spot_id=#{user_spot_id},user_scenic_type=#{user_scenic_type},user_interest_time=#{user_interest_time}
+        </set>
+        where user_interset_id=#{user_interest_id}
+    </update>
+
+    <!--获取用户所有关注的景点-->
+    <select id="selectAllUserInterByName" parameterType="Map" resultMap="UserInterestBaseMap">
+        select * from user_interest  where  user_name= #{user_name} order by user_interest_time DESC
+        <if test="start!=null and size!=null">
+            limit #{start},#{size}
+        </if>
+    </select>
+
+    <!--根据分页 start 和 size ]-->
+    <select id="checkIsHave" parameterType="Map" resultMap="UserInterestBaseMap">
+        select * from user_interest  where  user_spot_id=#{user_spot_id} and user_scenic_type=#{user_scenic_type} and user_name=#{user_name}
+    </select>
+
+
+
+</mapper>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.dao.ScenicDetailDao">
+
+    <resultMap id="ScenicDetailBaseMap" type="com.human.model.ScenicDetail">
+        <!--<id column="id" property="id" jdbcType="BIGINT"/>-->
+        <id column="scenic_detail_id" property="scenic_detail_id" jdbcType="INTEGER" />
+        <result column="scenic_spot_id" property="scenic_spot_id" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_name" property="scenic_detail_name" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_level" property="scenic_detail_level" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_address" property="scenic_detail_address" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_onesentence" property="scenic_detail_onesentence" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_commentscore" property="scenic_detail_commentscore" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_price" property="scenic_detail_price" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_intro" property="scenic_detail_intro" jdbcType="VARCHAR"/>
+        <collection property="scenicDetailImgList" ofType="com.human.model.ScenicDetailImg">
+            <id property="scenic_detail_Img_id" column="scenic_detail_Img_id" />
+            <result property="scenic_spot_id" column="scenic_spot_id" />
+            <result property="scenic_detail_img_url" column="scenic_detail_img_url" />
+            <result property="scenic_detail_img_sign" column="scenic_detail_img_sign" />
+            <result property="scenic_detail_img_title" column="scenic_detail_img_title" />
+            <result property="scenic_detail_img_desc" column="scenic_detail_img_desc" />
+            <result property="scenic_detail_img_order" column="scenic_detail_img_order" />
+        </collection>
+        <collection property="scenicDetailTipList" ofType="com.human.model.ScenicDetailTip">
+            <id property="scenic_tip_id" column="scenic_tip_id" />
+            <result property="scenic_spot_id" column="scenic_spot_id" />
+            <result property="scenic_detail_tip_sign" column="scenic_detail_tip_sign" />
+            <result property="scenic_detail_tip_title" column="scenic_detail_tip_title" />
+            <result property="scenic_detail_tip_desc" column="scenic_detail_tip_desc" />
+            <result property="scenic_detail_tip_order" column="scenic_detail_tip_order" />
+        </collection>
+
+    </resultMap>
+
+    <!--sqL根据ID获取景点详细信息-->
+    <select id="getScenic_DetailByScenic_Id"  parameterType="Map" resultMap="ScenicDetailBaseMap">
+          select *  FROM scenic_detail d,scenic_detail_img i ,scenic_detail_tip t where d.scenic_spot_id = #{S_ID} and  i.scenic_spot_id= #{S_ID} and  t.scenic_spot_id=#{S_ID};
+    </select>
+
+    <!--根据分页 start 和 size ]-->
+    <select id="selectAllScenicDetail" parameterType="Map" resultMap="ScenicDetailBaseMap">
+        select * from scenic_detail
+    </select>
+
+</mapper>

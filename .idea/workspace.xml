@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="myssmp:war exploded" />
+      <artifact name="travel" />
+      <artifact name="travel" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd4fd7f1-2670-4ccd-b523-2354dd97a92b" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JUnit4 Test Class" />
+        <option value="spring-beans.schema" />
+        <option value="XML" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="myssmp/invalid/Web" />
+    </ignored-facets>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1YqLFecrlUQsnNpZFQOLQGaHMNc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568956759480" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.human.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HQ\Desktop\3478117685806080\myssmp\src\main\webapp\WEB-INF\jsp" />
+      <recent name="C:\Users\HQ\Desktop\3478117685806080\myssmp\src\main\webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.human.controller" />
+      <recent name="com.human.service.impl" />
+      <recent name="com.human.service" />
+      <recent name="com.human.dao" />
+      <recent name="com.human.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\University document\大四下\毕业设计\myssmp\src\main\resources\mapping" />
+      <recent name="D:\University document\Main_Project\Employment_assistant\myssmp\src\main\webapp\SQL" />
+      <recent name="D:\University document\Main_Project\Employment_assistant\myssmp\src\main\resources\mapping" />
+      <recent name="D:\University document\Main_Project\Employment_assistant\myssmp\src\main\test" />
+      <recent name="D:\University document\Main_Project\Employment_assistant\myssmp\src\main\java\com\human\service\impl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomact">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntCoordSyncJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.human.util.EntCoordSyncJob" />
+      <module name="myssmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.human.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetLatAndLngByBaidu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.human.util.GetLatAndLngByBaidu" />
+      <module name="myssmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.human.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.human.controller.Main" />
+      <module name="myssmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.human.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="email" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.human.ExtraPack.email" />
+      <module name="myssmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.human.ExtraPack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorDevice" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="clearAppDataOnEachLaunch" value="true" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SessionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myssmp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.human.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.human.service" />
+      <option name="MAIN_CLASS_NAME" value="com.human.service.SessionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="HOST" value="120.79.15.183" />
+      <option name="LOCAL" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://120.79.15.183:8080/myssmp41/" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="travel">
+          <settings>
+            <option name="CONTEXT_PATH" value="/myssmp_war" />
+          </settings>
+        </artifact>
+        <artifact name="myssmp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/myssmp_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <option name="transportStagingTarget">
+                  <TransportTarget>
+                    <option name="id" value="2bb0fe4d-bf5b-4bd6-8c51-e81de8dea596" />
+                    <id>2bb0fe4d-bf5b-4bd6-8c51-e81de8dea596</id>
+                  </TransportTarget>
+                </option>
+                <option name="watchedLocalPath" value="" />
+                <watched-path />
+                <name>CONTEXT_XML</name>
+                <transport-target>
+                  <TransportTarget>
+                    <option name="id" value="2bb0fe4d-bf5b-4bd6-8c51-e81de8dea596" />
+                    <id>2bb0fe4d-bf5b-4bd6-8c51-e81de8dea596</id>
+                  </TransportTarget>
+                </transport-target>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <option name="stagingRemotePath" value="" />
+                <option name="transportStagingTarget">
+                  <TransportTarget>
+                    <option name="id" value="96a4e584-5a8f-4df4-82f6-e787d297f627" />
+                    <id>96a4e584-5a8f-4df4-82f6-e787d297f627</id>
+                  </TransportTarget>
+                </option>
+                <staging-path />
+                <name>STAGING</name>
+                <transport-target>
+                  <TransportTarget>
+                    <option name="id" value="96a4e584-5a8f-4df4-82f6-e787d297f627" />
+                    <id>96a4e584-5a8f-4df4-82f6-e787d297f627</id>
+                  </TransportTarget>
+                </transport-target>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" value="f34245f1-f735-4bda-947c-f2f8f39b254c" />
+          <host-id>f34245f1-f735-4bda-947c-f2f8f39b254c</host-id>
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62189" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="myssmp:war exploded" />
+          <artifact name="travel" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="D:\jdk\jdk-9.0.4\jre">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_myssmp" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50562" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tomact" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="myssmp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/myssmp_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_myssmp" />
+        <option name="HTTP_PORT" value="8082" />
+      </server-settings>
+      <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
+      <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file enabled="true" id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50562" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="myssmp:war exploded" />
+          <artifact name="travel" />
+          <artifact name="travel" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.email" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.EntCoordSyncJob" />
+      <item itemvalue="Application.GetLatAndLngByBaidu" />
+      <item itemvalue="JUnit.SessionServiceTest" />
+      <item itemvalue="Tomcat Server.tomact" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.12" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GetLatAndLngByBaidu" />
+        <item itemvalue="Application.EntCoordSyncJob" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SessionServiceTest" />
+        <item itemvalue="Application.email" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\HQ\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd4fd7f1-2670-4ccd-b523-2354dd97a92b" name="Default" comment="" />
+      <created>1501035536011</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1501035536011</updated>
+      <workItem from="1501035538909" duration="8406000" />
+      <workItem from="1501121553915" duration="406000" />
+      <workItem from="1557198986788" duration="315000" />
+      <workItem from="1557199350771" duration="1480000" />
+      <workItem from="1557202771827" duration="1648000" />
+      <workItem from="1557212406595" duration="866000" />
+      <workItem from="1557213305898" duration="191000" />
+      <workItem from="1557213529289" duration="3866000" />
+      <workItem from="1557238059244" duration="5175000" />
+      <workItem from="1557243282691" duration="2523000" />
+      <workItem from="1557282093006" duration="1939000" />
+      <workItem from="1557315000540" duration="1199000" />
+      <workItem from="1557324548422" duration="8786000" />
+      <workItem from="1557337838903" duration="749000" />
+      <workItem from="1557360103601" duration="3263000" />
+      <workItem from="1557363879960" duration="4494000" />
+      <workItem from="1557382533153" duration="8150000" />
+      <workItem from="1557409966084" duration="2456000" />
+      <workItem from="1557455586819" duration="5148000" />
+      <workItem from="1557468363909" duration="626000" />
+      <workItem from="1557471042820" duration="680000" />
+      <workItem from="1557564758337" duration="3839000" />
+      <workItem from="1557586611027" duration="2478000" />
+      <workItem from="1557590086995" duration="647000" />
+      <workItem from="1557651299209" duration="7319000" />
+      <workItem from="1557666207022" duration="599000" />
+      <workItem from="1557666858367" duration="1518000" />
+      <workItem from="1557668428027" duration="2630000" />
+      <workItem from="1557680460350" duration="1765000" />
+      <workItem from="1557684720635" duration="870000" />
+      <workItem from="1557747757696" duration="8464000" />
+      <workItem from="1557801417288" duration="3528000" />
+      <workItem from="1557805093565" duration="762000" />
+      <workItem from="1557808891271" duration="1259000" />
+      <workItem from="1557813215619" duration="7791000" />
+      <workItem from="1557826819856" duration="1249000" />
+      <workItem from="1557838050739" duration="12358000" />
+      <workItem from="1557889158085" duration="19741000" />
+      <workItem from="1557965192748" duration="8043000" />
+      <workItem from="1557987297789" duration="8417000" />
+      <workItem from="1557998409174" duration="23344000" />
+      <workItem from="1558073537559" duration="5115000" />
+      <workItem from="1558081784261" duration="351000" />
+      <workItem from="1558082173021" duration="2467000" />
+      <workItem from="1558085625413" duration="4027000" />
+      <workItem from="1558096300001" duration="8303000" />
+      <workItem from="1558141049519" duration="737000" />
+      <workItem from="1558165859470" duration="7610000" />
+      <workItem from="1558173694383" duration="12637000" />
+      <workItem from="1558243243106" duration="32274000" />
+      <workItem from="1558289788817" duration="1150000" />
+      <workItem from="1558332906067" duration="32723000" />
+      <workItem from="1558406351220" duration="4025000" />
+      <workItem from="1558413542463" duration="85000" />
+      <workItem from="1558413765556" duration="1209000" />
+      <workItem from="1558416972439" duration="10750000" />
+      <workItem from="1558430871620" duration="2122000" />
+      <workItem from="1558438957857" duration="538000" />
+      <workItem from="1558447474340" duration="2769000" />
+      <workItem from="1558520682837" duration="13984000" />
+      <workItem from="1558570540453" duration="8330000" />
+      <workItem from="1558582051083" duration="213000" />
+      <workItem from="1558582733805" duration="3834000" />
+      <workItem from="1558613968329" duration="1294000" />
+      <workItem from="1558790294814" duration="6022000" />
+      <workItem from="1558943842082" duration="10157000" />
+      <workItem from="1559011177356" duration="4382000" />
+      <workItem from="1559017452708" duration="168000" />
+      <workItem from="1559017757180" duration="1881000" />
+      <workItem from="1559021631964" duration="7320000" />
+      <workItem from="1559048585901" duration="8017000" />
+      <workItem from="1559102273071" duration="35866000" />
+      <workItem from="1559175275361" duration="8401000" />
+      <workItem from="1559196526317" duration="8521000" />
+      <workItem from="1559210078140" duration="600000" />
+      <workItem from="1559210749662" duration="7679000" />
+      <workItem from="1559220258708" duration="7998000" />
+      <workItem from="1559282878323" duration="2636000" />
+      <workItem from="1559364170278" duration="23655000" />
+      <workItem from="1559448767991" duration="12336000" />
+      <workItem from="1559524847566" duration="15072000" />
+      <workItem from="1559551887829" duration="692000" />
+      <workItem from="1559560536094" duration="10614000" />
+      <workItem from="1559606308638" duration="6478000" />
+      <workItem from="1559615038294" duration="4423000" />
+      <workItem from="1559622996251" duration="11330000" />
+      <workItem from="1559635957791" duration="3090000" />
+      <workItem from="1559653809470" duration="6900000" />
+      <workItem from="1559700865665" duration="33766000" />
+      <workItem from="1559780147410" duration="7014000" />
+      <workItem from="1559801629026" duration="8075000" />
+      <workItem from="1559814139288" duration="18458000" />
+      <workItem from="1559886112857" duration="10337000" />
+      <workItem from="1559907507425" duration="8390000" />
+      <workItem from="1560047934022" duration="3973000" />
+      <workItem from="1560062312112" duration="14823000" />
+      <workItem from="1560132711599" duration="3959000" />
+      <workItem from="1560144031583" duration="2178000" />
+      <workItem from="1560156239028" duration="18371000" />
+      <workItem from="1560219963056" duration="1390000" />
+      <workItem from="1560243688443" duration="191000" />
+      <workItem from="1560245642668" duration="1131000" />
+      <workItem from="1560304449868" duration="8119000" />
+      <workItem from="1560318455858" duration="7451000" />
+      <workItem from="1560338764369" duration="1458000" />
+      <workItem from="1560340719892" duration="5788000" />
+      <workItem from="1560353806555" duration="5899000" />
+      <workItem from="1560361267294" duration="7495000" />
+      <workItem from="1560384632231" duration="3795000" />
+      <workItem from="1560396717060" duration="1379000" />
+      <workItem from="1568954778282" duration="839000" />
+      <workItem from="1583665083010" duration="1772000" />
+      <workItem from="1583758271995" duration="2218000" />
+      <workItem from="1583804762934" duration="5394000" />
+      <workItem from="1583818748106" duration="488000" />
+      <workItem from="1583819273886" duration="136000" />
+      <workItem from="1583819431773" duration="494000" />
+      <workItem from="1583894741111" duration="3811000" />
+      <workItem from="1584197850979" duration="287000" />
+      <workItem from="1584345821818" duration="88000" />
+      <workItem from="1584347901568" duration="3077000" />
+      <workItem from="1584428777578" duration="3123000" />
+      <workItem from="1584500091029" duration="23076000" />
+      <workItem from="1584585878078" duration="5045000" />
+      <workItem from="1584601586809" duration="20729000" />
+      <workItem from="1584665901201" duration="4304000" />
+      <workItem from="1584686249118" duration="11319000" />
+      <workItem from="1584753115764" duration="19792000" />
+      <workItem from="1584843858554" duration="1938000" />
+      <workItem from="1584863651898" duration="468000" />
+      <workItem from="1584969436543" duration="2581000" />
+      <workItem from="1585035907278" duration="4396000" />
+      <workItem from="1585115020166" duration="4511000" />
+      <workItem from="1585135064541" duration="706000" />
+      <workItem from="1585182866215" duration="31064000" />
+      <workItem from="1585274127730" duration="8275000" />
+      <workItem from="1585299904803" duration="3621000" />
+      <workItem from="1585320036332" duration="4654000" />
+      <workItem from="1585365470996" duration="9970000" />
+      <workItem from="1585396132804" duration="6804000" />
+      <workItem from="1585419143004" duration="329000" />
+      <workItem from="1585466127774" duration="15372000" />
+      <workItem from="1585549750233" duration="19970000" />
+      <workItem from="1585642477823" duration="507000" />
+      <workItem from="1585643032095" duration="255000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

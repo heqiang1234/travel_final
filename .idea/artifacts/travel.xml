@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="travel">
+    <output-path>$PROJECT_DIR$/out/artifacts/travel</output-path>
+    <root id="archive" name="travel.war">
+      <element id="artifact" artifact-name="myssmp:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />
+    </root>
+  </artifact>
+</component>

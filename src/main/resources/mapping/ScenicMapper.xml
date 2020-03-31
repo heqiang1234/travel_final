@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.dao.ScenicDao">
+
+    <resultMap id="ScenicBaseMap" type="com.human.model.Scenic">
+        <!--<id column="id" property="id" jdbcType="BIGINT"/>-->
+        <id column="scenic_id" property="scenic_id" jdbcType="INTEGER" />
+        <result column="scenic_spot_id" property="scenic_spot_id" jdbcType="VARCHAR"/>
+        <result column="scenic_name" property="scenic_name" jdbcType="VARCHAR"/>
+        <result column="scenic_area" property="scenic_area" jdbcType="VARCHAR"/>
+        <result column="scenic_type" property="scenic_type" jdbcType="VARCHAR"/>
+        <result column="scenic_level" property="scenic_level" jdbcType="VARCHAR"/>
+        <result column="scenic_heat" property="scenic_heat" jdbcType="VARCHAR"/>
+        <result column="scenic_address" property="scenic_address" jdbcType="VARCHAR"/>
+        <result column="scenic_latitude" property="scenic_latitude" jdbcType="VARCHAR"/>
+        <result column="scenic_feature" property="scenic_feature" jdbcType="VARCHAR"/>
+        <result column="scenic_img" property="scenic_img" jdbcType="VARCHAR"/>
+        <result column="scenic_crawltime" property="scenic_crawltime" jdbcType="VARCHAR"/>
+        <result column="scenic_city" property="scenic_city" jdbcType="VARCHAR"/>
+        <association property="scenicDetail" javaType="com.human.model.ScenicDetail">
+        <id property="scenic_detail_id" column="scenic_detail_id" jdbcType="INTEGER" />
+        <result property="scenic_spot_id" column="scenic_spot_id" jdbcType="VARCHAR"/>
+        <result property="scenic_detail_name" column="scenic_detail_name" jdbcType="VARCHAR"/>
+        <result property="scenic_detail_level" column="scenic_detail_level" jdbcType="VARCHAR"/>
+        <result property="scenic_detail_address" column="scenic_detail_address" jdbcType="VARCHAR"/>
+        <result property="scenic_detail_onesentence" column="scenic_detail_onesentence" jdbcType="VARCHAR"/>
+        <result property="scenic_detail_commentscore" column="scenic_detail_commentscore" jdbcType="VARCHAR"/>
+        <result property="scenic_detail_price" column="scenic_detail_price" jdbcType="VARCHAR"/>
+        <result property="scenic_detail_intro" column="scenic_detail_intro" jdbcType="VARCHAR"/>
+    </association>
+    </resultMap>
+
+    <!--sql查询所有景点信息-->
+    <select id="selectAllScenicInfo" resultMap="ScenicBaseMap">
+        select * FROM scenic
+    </select>
+
+    <!--sql查询景点数量-->
+    <select id="ScenicCountAll" resultType="int">
+        select count(*)  FROM scenic
+    </select>
+
+    <!--sql查询某地区景点数量-->
+    <select id="ScenicCount" resultType="int">
+        select count(*) FROM scenic
+    </select>
+
+    <!--根据ID获取景点信息-->
+    <select id="getScenicById" parameterType="Map" resultMap="ScenicBaseMap">
+        select * from scenic  where  scenic_spot_id=#{scenic_spot_id}
+    </select>
+
+    <!-- 根据type查询景点数量 -->
+    <select id="selectScenicByType" parameterType="Map" resultType="int" >
+        <if test="S_ID.toString()=='Hot'.toString()">
+            select count(distinct(scenic_spot_id)) from  scenic
+        </if>
+        <if test="S_ID==null">
+            select count(distinct(scenic_spot_id)) from  scenic
+        </if>
+        <if test="S_ID.toString()=='Search'.toString()">
+            select COUNT(scenic_id) from scenic  where  scenic_name like "%"#{S_Name}"%" or  scenic_area like "%"#{S_Name}"%" or  scenic_type like "%"#{S_Name}"%" or  scenic_address like "%"#{S_Name}"%" or  scenic_feature like "%"#{S_Name}"%"
+        </if>
+    </select>
+
+    <!--根据分页 start 和 size ]-->
+    <select id="findScenicByPage" parameterType="Map" resultMap="ScenicBaseMap">
+        select * from scenic
+            <if test="start!=null and size!=null">
+                limit #{start},#{size}
+            </if>
+    </select>
+
+    <!--根据分页 start 和 size ]-->
+    <select id="SearchScenicByType" parameterType="Map" resultMap="ScenicBaseMap">
+        select * from scenic  where  scenic_name like "%"#{S_Name}"%" or  scenic_area like "%"#{S_Name}"%" or  scenic_type like "%"#{S_Name}"%" or  scenic_address like "%"#{S_Name}"%" or  scenic_feature like "%"#{S_Name}"%"
+        <if test="start!=null and size!=null">
+            limit #{start},#{size}
+        </if>
+    </select>
+
+    <!-- 根据分页数据start 和size查询数据 -->
+    <select id="findScenicByPageByAddress" parameterType="Map" resultMap="ScenicBaseMap">
+        select * from scenic
+    </select>
+
+    <!--根据  GetPostAIScenic -->
+    <select id="GetPostAIScenic" parameterType="Map" resultMap="ScenicBaseMap">
+        select * from scenic where scenic_type in  (select user_scenic_type from user_interest where user_name=#{user_name} GROUP BY user_scenic_type)
+        <if test="start!=null and size!=null">
+            limit #{start},#{size}
+        </if>
+    </select>
+
+    <!--selectPostAICount-->
+    <select id="selectPostAICount" parameterType="Map" resultType="int">
+        select COUNT(scenic_type) from scenic where scenic_type in  (select user_scenic_type from user_interest where user_name=#{user_name} GROUP BY user_scenic_type)
+    </select>
+
+
+</mapper>

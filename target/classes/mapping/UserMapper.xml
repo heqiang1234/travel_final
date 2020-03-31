@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.human.dao.UserDao">
+
+    <resultMap id="UserBaseMap" type="com.human.model.User">
+        <!--<id column="id" property="id" jdbcType="BIGINT"/>-->
+        <id column="userID" property="user_Id" jdbcType="INTEGER" />
+        <result column="userName" property="user_Name" jdbcType="VARCHAR"/>
+        <result column="userPassword" property="user_Password" jdbcType="VARCHAR"/>
+        <result column="userRealName" property="user_RealName" jdbcType="VARCHAR"/>
+        <result column="userIntentionalPost" property="user_IntentionalPost" jdbcType="VARCHAR"/>
+        <result column="userEmail" property="user_Email" jdbcType="VARCHAR"/>
+        <result column="userImg" property="UserImg" jdbcType="VARCHAR"/>
+        <result column="userStatus" property="user_Status" jdbcType="VARCHAR"/>
+        <result column="userSex" property="user_Sex" jdbcType="VARCHAR"/>
+        <result column="userCity" property="user_City" jdbcType="VARCHAR"/>
+        <result column="userResume" property="user_Resume" jdbcType="VARCHAR"/>
+        <result column="userProvince" property="user_Province" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+		userID,userName,userRealName,userIntentionalPost,userCity,userEmail,userSex,userResume,userStatus,userImg,userProvince
+	</sql>
+
+    <select id="selectUserById" parameterType="int" resultMap="UserBaseMap">
+        SELECT * FROM user
+        WHERE userID = #{user_Id}
+    </select>
+
+    <select id="selectUserByName"  resultMap="UserBaseMap">
+        SELECT *  FROM user
+        WHERE userName = #{user_Name}
+    </select>
+
+    <select id="selectUserByNameNoPassword"  resultMap="UserBaseMap">
+        SELECT
+        <include refid="Base_Column_List" />
+          FROM user
+        WHERE userName = #{user_Name}
+    </select>
+
+    <!--<select id="selectUserByPhoneOrEmail" resultMap="UserBaseMap">-->
+        <!--SELECT * FROM t_user-->
+        <!--WHERE user_email = #{emailOrPhone} OR user_phone = #{emailOrPhone}-->
+        <!--AND user_state = #{state}-->
+    <!--</select>-->
+
+    <select id="selectAllUser" resultMap="UserBaseMap">
+        SELECT * FROM user
+    </select>
+
+    <select id="selectPermissionById" parameterType="String">
+        SELECT url FROM permission
+        where roleid=#{user_Id}
+    </select>
+
+    <delete id="deleteUserById" parameterType="int"   >
+        delete from user
+        where userID = #{user_Id}
+    </delete>
+
+    <!--添加用户保存数据-->
+    <insert id="save" parameterType="com.human.model.User">
+        insert into user (userName,userPassword) values
+        (#{user_Name},#{user_Password})
+    </insert>
+
+    <update id="updateUser" parameterType="com.human.model.User">
+        update user
+        <set>
+        <if test="user_RealName !=null and  user_RealName.length()>0">userRealName=#{user_RealName},</if>
+        <if test="user_IntentionalPost !=null and  user_IntentionalPost.length()>0">userIntentionalPost=#{user_IntentionalPost},</if>
+        <if test="user_Email !=null and  user_Email.length()>0">userEmail=#{user_Email},</if>
+         <if test="user_Sex !=null and  user_Sex.length()>0">userSex=#{user_Sex},</if>
+         <if test="user_City !=null and  user_City.length()>0">userCity=#{user_City},</if>
+         <if test="UserImg !=null and  UserImg.length()>0">userImg=#{UserImg},</if>
+          <if test="user_Status !=null and  user_Status.length()>0">userStatus=#{user_Status},</if>
+            <if test="user_Province !=null and  user_Province.length()>0">userProvince=#{user_Province}</if>
+        </set>
+      where  userName=#{user_Name}
+    </update>
+
+    <update id="updateUserPassword" parameterType="com.human.model.User">
+        update user
+        <set>
+       <if test="user_Password!=null">
+           userPassword=#{user_Password}
+       </if>
+    </set>
+         where userName=#{user_Name}
+    </update>
+
+
+    <update id="saveImg" parameterType="com.human.model.User">
+        update user
+        <set>
+            <if test="ImgUrl!=null">
+                userImg=#{ImgUrl}
+            </if>
+        </set>
+        where userName=#{userName}
+    </update>
+
+    <update id="saveResume" parameterType="com.human.model.User">
+        update user
+        <set>
+            <if test="ResumeUrl!=null">
+                userResume=#{ResumeUrl}
+            </if>
+        </set>
+        where userName=#{userName}
+    </update>
+
+</mapper>

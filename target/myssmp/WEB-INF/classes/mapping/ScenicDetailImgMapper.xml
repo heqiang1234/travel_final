@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.dao.ScenicDetailImgDao">
+
+    <resultMap id="ScenicDetailImgBaseMap" type="com.human.model.ScenicDetailImg">
+        <!--<id column="id" property="id" jdbcType="BIGINT"/>-->
+        <id column="scenic_detail_Img_id" property="scenic_detail_Img_id" jdbcType="INTEGER" />
+        <result column="scenic_spot_id" property="scenic_spot_id" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_img_url" property="scenic_detail_img_url" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_img_sign" property="scenic_detail_img_sign" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_img_title" property="scenic_detail_img_title" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_img_desc" property="scenic_detail_img_desc" jdbcType="VARCHAR"/>
+        <result column="scenic_detail_img_order" property="scenic_detail_img_order" jdbcType="VARCHAR"/>
+    </resultMap>
+<!--    <if test="start!=null and size!=null">-->
+<!--        limit #{start},#{size}-->
+<!--    </if>-->
+
+<!--    &lt;!&ndash; 根据分页数据start 和size查询数据 &ndash;&gt;-->
+<!--    <select id="selectScenicDetailImgByScenic_Id" parameterType="Map" resultMap="ScenicDetailImgBaseMap">-->
+<!--        select *-->
+<!--        from scenic_detail_img-->
+<!--    </select>-->
+
+    <!-- 获取首页轮播图图片-->
+    <select id="getScenic_DetailImg"  resultMap="ScenicDetailImgBaseMap">
+        select i.scenic_spot_id,i.scenic_detail_img_url from scenic_detail_img i where scenic_detail_img_sign="1" and i.scenic_detail_img_url in (select min(scenic_detail_img_url) from scenic_detail_img group by scenic_spot_id) limit 0,10
+    </select>
+
+    <!-- 获取广告图图片-->
+    <select id="getScenic_DetailImgAd"  resultMap="ScenicDetailImgBaseMap">
+        select i.scenic_spot_id,i.scenic_detail_img_url from scenic_detail_img i where scenic_detail_img_sign="2" and i.scenic_detail_img_url in (select min(scenic_detail_img_url) from scenic_detail_img group by scenic_spot_id) limit 0,10
+    </select>
+
+    <!-- 获取详情页轮播图图片-->
+    <select id="selectScenicDetailImgByScenic_Id" parameterType="Map" resultMap="ScenicDetailImgBaseMap">
+       select * from scenic_detail_img i where scenic_detail_img_sign="1" and i.scenic_spot_id= #{S_ID} order by  scenic_detail_img_order asc
+    </select>
+
+    <!-- 获取特色看点图片-->
+    <select id="selectScenicDetailImgByScenic_Id_SP" parameterType="Map" resultMap="ScenicDetailImgBaseMap">
+       select * from scenic_detail_img  where scenic_detail_img_sign="2" and scenic_spot_id= #{S_ID} order by  scenic_detail_img_order asc
+    </select>
+
+</mapper>
